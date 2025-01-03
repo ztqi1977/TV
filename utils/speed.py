@@ -83,7 +83,7 @@ async def get_speed_m3u8(url: str, filter_resolution: bool = config.open_filter_
     """
     Get the speed of the m3u8 url with a total timeout
     """
-    info = {'speed': None, 'delay': None, 'resolution': None}
+    info = {'speed': None, 'delay': None, 'resolution': None, 'codec':None}
     location = None
     try:
         url = quote(url, safe=':/?$&=@[]').partition('$')[0]
@@ -125,7 +125,7 @@ async def get_speed_m3u8(url: str, filter_resolution: bool = config.open_filter_
         pass
     finally:
         if filter_resolution and not location and info['delay'] is not None:
-            info['resolution'] = await get_resolution_ffprobe(url, timeout)
+            info['resolution'], info['codec'] = await get_resolution_ffprobe(url, timeout)
         return info
 
 
@@ -201,33 +201,50 @@ async def ffmpeg_url(url, timeout=config.sort_timeout):
         return res
 
 
-async def get_resolution_ffprobe(url: str, timeout: int = config.sort_timeout) -> str | None:
+async def get_resolution_ffprobe(url: str, timeout: int = 10):
     """
-    Get the resolution of the url by ffprobe
+    Get the resolution and video codec of the URL by ffprobe.
+    
+    Returns a tuple containing (resolution, codec).
+    If an error occurs or the information cannot be retrieved, returns (None, None).
     """
     resolution = None
+    codec = None
     proc = None
+    
     try:
         probe_args = [
             'ffprobe',
             '-v', 'error',
             '-select_streams', 'v:0',
-            '-show_entries', 'stream=width,height',
-            "-of", 'json',
+            '-show_entries', 'stream=width,height,codec_name',
+            '-of', 'json',
             url
         ]
+        
         proc = await asyncio.create_subprocess_exec(*probe_args, stdout=asyncio.subprocess.PIPE,
                                                     stderr=asyncio.subprocess.PIPE)
-        out, _ = await asyncio.wait_for(proc.communicate(), timeout)
-        video_stream = json.loads(out.decode('utf-8'))["streams"][0]
-        resolution = f"{video_stream['width']}x{video_stream['height']}"
-    except:
-        if proc:
-            proc.kill()
+        
+        out, err = await asyncio.wait_for(proc.communicate(), timeout)
+        
+        if proc.returncode == 0:
+            data = json.loads(out.decode('utf-8'))
+            if "streams" in data and len(data["streams"]) > 0:
+                video_stream = data["streams"][0]
+                resolution = f"{video_stream.get('width', 'N/A')}x{video_stream.get('height', 'N/A')}"
+                codec = video_stream.get('codec_name')
+                
+    except asyncio.TimeoutError:
+        print(f"Timeout expired while checking resolution and codec for {url}")
+    except Exception as e:
+        print(f"An error occurred while checking resolution and codec for {url}: {e}")
     finally:
         if proc:
+            if proc.returncode is None:
+                proc.kill()
             await proc.wait()
-        return resolution
+    
+    return resolution, codec
 
 
 def get_video_info(video_info):
@@ -274,7 +291,7 @@ async def get_speed(url, ipv6_proxy=None, filter_resolution=config.open_filter_r
     """
     Get the speed (response time and resolution) of the url
     """
-    data = {'speed': None, 'delay': None, 'resolution': None}
+    data = {'speed': None, 'delay': None, 'resolution': None, 'codec': None}
     try:
         cache_key = None
         url_is_ipv6 = is_ipv6(url)
@@ -319,14 +336,15 @@ def sort_urls(name, data, supply=config.open_supply, filter_speed=config.open_fi
     Sort the urls with info
     """
     filter_data = []
-    for url, date, resolution, origin in data:
+    for url, date, resolution, origin, codec in data:
         result = {
             "url": remove_cache_info(url),
             "date": date,
             "delay": None,
             "speed": None,
             "resolution": resolution,
-            "origin": origin
+            "origin": origin,
+            "codec": codec
         }
         if origin == "whitelist":
             filter_data.append(result)
@@ -336,13 +354,13 @@ def sort_urls(name, data, supply=config.open_supply, filter_speed=config.open_fi
         if cache_key and cache_key in cache:
             cache_item = cache[cache_key]
             if cache_item:
-                speed, delay, cache_resolution = cache_item['speed'], cache_item['delay'], cache_item['resolution']
+                speed, delay, cache_resolution, codec = cache_item['speed'], cache_item['delay'], cache_item['resolution'], cache_item['codec']
                 resolution = cache_resolution or resolution
                 if speed is not None:
                     try:
                         if logger:
                             logger.info(
-                                f"Name: {name}, URL: {result["url"]}, Date: {date}, Delay: {delay} ms, Speed: {speed:.2f} M/s, Resolution: {resolution}"
+                                f"Name: {name}, URL: {result['url']}, Date: {date}, Delay: {delay} ms, Speed: {speed:.2f} M/s, Resolution: {resolution}, Codec: {codec}"
                             )
                     except Exception as e:
                         print(e)
@@ -353,9 +371,10 @@ def sort_urls(name, data, supply=config.open_supply, filter_speed=config.open_fi
                     result["delay"] = delay
                     result["speed"] = speed
                     result["resolution"] = resolution
+                    result["codec"] = codec
                     filter_data.append(result)
     filter_data.sort(key=sort_urls_key, reverse=True)
     return [
-        (item["url"], item["date"], item["resolution"], item["origin"])
+        (item["url"], item["date"], item["resolution"], item["origin"], item["codec"])
         for item in filter_data
     ]

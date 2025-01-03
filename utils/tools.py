@@ -156,7 +156,7 @@ def get_total_urls(info_list, ipv_type_prefer, origin_type_prefer):
         origin: {"ipv4": [], "ipv6": []} for origin in origin_type_prefer
     }
     total_urls = []
-    for url, _, resolution, origin in info_list:
+    for url, _, resolution, origin, codec in info_list:
         if not origin:
             continue
 
@@ -184,6 +184,9 @@ def get_total_urls(info_list, ipv_type_prefer, origin_type_prefer):
 
         if resolution:
             url = add_url_info(url, resolution)
+
+        if codec:
+            url = add_url_info(url, codec)
 
         if not origin_prefer_bool:
             origin = "all"

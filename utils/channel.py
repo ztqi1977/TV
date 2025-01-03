@@ -454,6 +454,7 @@ def append_data_to_info_data(info_data, cate, name, data, origin=None, check=Tru
         try:
             url, date, resolution, *rest = item
             url_origin = origin or (rest[0] if rest else None)
+            codec = None or (rest[1] if rest else None)
             if not url_origin:
                 continue
             if url:
@@ -471,7 +472,7 @@ def append_data_to_info_data(info_data, cate, name, data, origin=None, check=Tru
                         or (
                         check and check_url_ipv_type(pure_url) and not check_url_by_keywords(url, blacklist))
                 ):
-                    info_data[cate][name].append((url, date, resolution, url_origin))
+                    info_data[cate][name].append((url, date, resolution, url_origin, codec))
                     urls.append(pure_url)
         except:
             continue
@@ -733,15 +734,15 @@ def get_channel_data_cache_with_compare(data, new_data):
             if url_info and cate in data and name in data[cate]:
                 new_urls = {
                     new_url.partition("$")[0]: new_resolution
-                    for new_url, _, new_resolution, _ in url_info
+                    for new_url, _, new_resolution, _, new_codec in url_info
                 }
                 updated_data = []
                 for info in data[cate][name]:
-                    url, date, resolution, origin = info
+                    url, date, resolution, origin, codec = info
                     base_url = url.partition("$")[0]
                     if base_url in new_urls:
                         resolution = new_urls[base_url]
-                        updated_data.append((url, date, resolution, origin))
+                        updated_data.append((url, date, resolution, origin, codec))
                 data[cate][name] = updated_data
 
 
