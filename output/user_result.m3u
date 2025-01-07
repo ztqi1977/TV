@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.cn/e.xml"
-#EXTINF:-1 tvg-name="2025-01-05 06:36:57" tvg-logo="https://live.fanmingming.cn/tv/2025-01-05 06:36:57.png" group-title="🕘️更新时间",2025-01-05 06:36:57
+#EXTINF:-1 tvg-name="2025-01-07 09:21:07" tvg-logo="https://live.fanmingming.cn/tv/2025-01-07 09:21:07.png" group-title="🕘️更新时间",2025-01-07 09:21:07
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000010000030810/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV1" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="📺央视频道",CCTV-1
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000010000030810/1.m3u8$订阅源-IPv6-1920x1080-h264
@@ -38,9 +38,9 @@ http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010211/1.m3u8?$订�
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.cn/tv/CCTV2.png" group-title="📺央视频道",CCTV-2
 http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000001000012442/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.cn/tv/CCTV2.png" group-title="📺央视频道",CCTV-2
-http://[2409:8087:1a0a:df::404b]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225588/index.m3u8$订阅源-IPv6-1920x1080-h264
+http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226195/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV2" tvg-logo="https://live.fanmingming.cn/tv/CCTV2.png" group-title="📺央视频道",CCTV-2
-http://[2409:8087:1a0a:df::4038]/ottrrs.hl.chinamobile.com/TVOD/88888888/224/3221225588/index.m3u8$订阅源-IPv6-1920x1080-hevc
+http://[2409:8087:1a0a:df::404b]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225588/index.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://live.fanmingming.cn/tv/CCTV3.png" group-title="📺央视频道",CCTV-3
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010212/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://live.fanmingming.cn/tv/CCTV3.png" group-title="📺央视频道",CCTV-3
@@ -52,7 +52,7 @@ http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000001000011218/1.m3u8$订�
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://live.fanmingming.cn/tv/CCTV3.png" group-title="📺央视频道",CCTV-3
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010212/1.m3u8?$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://live.fanmingming.cn/tv/CCTV3.png" group-title="📺央视频道",CCTV-3
-http://[2409:8087:74d4:21::2f]/270000001128/9900000003/index.m3u8$订阅源-IPv6-1920x1080-h264
+http://[2409:8087:7008:20::2]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226397/1.m3u8$订阅源-IPv6-1920x1080-hevc
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://live.fanmingming.cn/tv/CCTV3.png" group-title="📺央视频道",CCTV-3
 http://[2409:8087:1a0a:df::404e]:80/wh7f454c46tw1306766403_-33994166/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226021/index.m3u8?icpid=88888888&RTS=1713968135&from=4&hms_devid=1208&online=1713968135&vqe=3$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV3" tvg-logo="https://live.fanmingming.cn/tv/CCTV3.png" group-title="📺央视频道",CCTV-3
@@ -70,6 +70,8 @@ http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010017/1.m3u8?$订�
 #EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://live.fanmingming.cn/tv/CCTV4.png" group-title="📺央视频道",CCTV-4
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010017/index.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://live.fanmingming.cn/tv/CCTV4.png" group-title="📺央视频道",CCTV-4
+http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226191/1.m3u8$订阅源-IPv6-1920x1080-h264
+#EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://live.fanmingming.cn/tv/CCTV4.png" group-title="📺央视频道",CCTV-4
 http://[2409:8087:1a0a:df::4031]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226428/index.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://live.fanmingming.cn/tv/CCTV4.png" group-title="📺央视频道",CCTV-4
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226428/index.m3u8$订阅源-IPv6-1920x1080-hevc
@@ -79,8 +81,6 @@ http://[2409:8087:1a0a:df::4031]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/322
 http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/2/224/3221226428/2.m3u8$订阅源-IPv6-1920x1080-hevc
 #EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://live.fanmingming.cn/tv/CCTV4.png" group-title="📺央视频道",CCTV-4
 http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/8/3221226007/index.m3u8$订阅源-IPv6-1920x1080-hevc
-#EXTINF:-1 tvg-name="CCTV4" tvg-logo="https://live.fanmingming.cn/tv/CCTV4.png" group-title="📺央视频道",CCTV-4
-http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/8/3221226007/index.m3u8?$订阅源-IPv6-1920x1080-hevc
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://live.fanmingming.cn/tv/CCTV5.png" group-title="📺央视频道",CCTV-5
 http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000005000265005/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://live.fanmingming.cn/tv/CCTV5.png" group-title="📺央视频道",CCTV-5
@@ -100,7 +100,7 @@ http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000005000265005/$订阅源-
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://live.fanmingming.cn/tv/CCTV5.png" group-title="📺央视频道",CCTV-5
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010145/1.m3u8?$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV5" tvg-logo="https://live.fanmingming.cn/tv/CCTV5.png" group-title="📺央视频道",CCTV-5
-http://[2409:8087:74d4:21::2f]/270000001128/9900000005/index.m3u8$订阅源-IPv6-1920x1080-h264
+http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226395/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="📺央视频道",CCTV-5+
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010202/index.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="📺央视频道",CCTV-5+
@@ -114,13 +114,13 @@ http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000001000018504/$订阅源-
 #EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="📺央视频道",CCTV-5+
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010202/1.m3u8?$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="📺央视频道",CCTV-5+
-http://[2409:8087:1a0a:df::404b]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225603/index.m3u8$订阅源-IPv6-1920x1080-h264
+http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000001000018504/1.m3u8$订阅源-IPv6-1920x1080-h264
+#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="📺央视频道",CCTV-5+
+http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221225761/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="📺央视频道",CCTV-5+
 http://[2409:8087:1a0a:df::4032]:80/wh7f454c46tw1559678945_883095252/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225603/index.m3u8?icpid=88888888&RTS=1713968388&from=4&hms_devid=1143&online=1713968388&vqe=3$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="📺央视频道",CCTV-5+
 http://[2409:8087:1a0a:df::4032]:80/wh7f454c46tw1559678945_883095252/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225603/index.m3u8$订阅源-IPv6-1920x1080-h264
-#EXTINF:-1 tvg-name="CCTV5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV5+.png" group-title="📺央视频道",CCTV-5+
-http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/8/3221225603/index.m3u8$订阅源-IPv6-1920x1080-hevc
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png" group-title="📺央视频道",CCTV-6
 http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000005000265006/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png" group-title="📺央视频道",CCTV-6
@@ -136,7 +136,7 @@ http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010214/1.m3u8?$订�
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png" group-title="📺央视频道",CCTV-6
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010214/index.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png" group-title="📺央视频道",CCTV-6
-http://[2409:8087:74d4:21::2f]/270000001128/9900000006/index.m3u8$订阅源-IPv6-1920x1080-h264
+http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226393/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png" group-title="📺央视频道",CCTV-6
 http://[2409:8087:1a0a:df::4038]:80/wh7f454c46tw1592771597_580809367/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226010/index.m3u8?icpid=88888888&RTS=1713968421&from=4&hms_devid=1211&online=1713968421&vqe=3$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV6" tvg-logo="https://live.fanmingming.cn/tv/CCTV6.png" group-title="📺央视频道",CCTV-6
@@ -172,15 +172,15 @@ http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010216/1.m3u8?$订�
 #EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://live.fanmingming.cn/tv/CCTV8.png" group-title="📺央视频道",CCTV-8
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010216/index.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://live.fanmingming.cn/tv/CCTV8.png" group-title="📺央视频道",CCTV-8
-http://[2409:8087:74d4:21::2f]/270000001128/9900000008/index.m3u8$订阅源-IPv6-1920x1080-h264
-#EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://live.fanmingming.cn/tv/CCTV8.png" group-title="📺央视频道",CCTV-8
-http://[2409:8087:1a0a:df::404b]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226008/index.m3u8$订阅源-IPv6-1920x1080-h264
+http://[2409:8087:7008:20::2]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226391/1.m3u8$订阅源-IPv6-1920x1080-hevc
 #EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://live.fanmingming.cn/tv/CCTV8.png" group-title="📺央视频道",CCTV-8
 http://[2409:8087:1a0a:df::4036]:80/wh7f454c46tw1670555715_-98597522/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226008/index.m3u8?icpid=88888888&RTS=1713968499&from=4&hms_devid=1209&online=1713968499&vqe=3$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://live.fanmingming.cn/tv/CCTV8.png" group-title="📺央视频道",CCTV-8
 http://[2409:8087:1a0a:df::4036]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226008/index.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://live.fanmingming.cn/tv/CCTV8.png" group-title="📺央视频道",CCTV-8
 http://[2409:8087:1a0a:df::4036]:80/wh7f454c46tw1670555715_-98597522/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226008/index.m3u8$订阅源-IPv6-1920x1080-h264
+#EXTINF:-1 tvg-name="CCTV8" tvg-logo="https://live.fanmingming.cn/tv/CCTV8.png" group-title="📺央视频道",CCTV-8
+http://[2409:8087:1a0a:df::404b]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226008/index.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://live.fanmingming.cn/tv/CCTV9.png" group-title="📺央视频道",CCTV-9
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010052/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://live.fanmingming.cn/tv/CCTV9.png" group-title="📺央视频道",CCTV-9
@@ -220,7 +220,7 @@ http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010203/1.m3u8?$订�
 #EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://live.fanmingming.cn/tv/CCTV10.png" group-title="📺央视频道",CCTV-10
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000010000016738/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://live.fanmingming.cn/tv/CCTV10.png" group-title="📺央视频道",CCTV-10
-http://[2409:8087:1a0a:df::4035]:80/wh7f454c46tw1741373816_102984390/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225730/index.m3u8?icpid=88888888&RTS=1713968570&from=4&hms_devid=1209&online=1713968570&vqe=3$订阅源-IPv6-1920x1080-h264
+http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226189/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://live.fanmingming.cn/tv/CCTV12.png" group-title="📺央视频道",CCTV-12
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010205/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://live.fanmingming.cn/tv/CCTV12.png" group-title="📺央视频道",CCTV-12
@@ -240,7 +240,7 @@ http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000001000001640/1.m3u8$订�
 #EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://live.fanmingming.cn/tv/CCTV12.png" group-title="📺央视频道",CCTV-12
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010205/1.m3u8?$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://live.fanmingming.cn/tv/CCTV12.png" group-title="📺央视频道",CCTV-12
-http://[2409:8087:1a0a:df::404e]:80/wh7f454c46tw1801993293_427444497/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225731/index.m3u8?icpid=88888888&RTS=1713968631&from=4&hms_devid=1208&online=1713968631&vqe=3$订阅源-IPv6-1920x1080-h264
+http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226190/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="📺央视频道",CCTV-13
 http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010093/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="📺央视频道",CCTV-13
@@ -252,12 +252,12 @@ http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010093/1.m3u8?$订�
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="📺央视频道",CCTV-13
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031108/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="📺央视频道",CCTV-13
-http://[2409:8087:1a0a:df::4033]:80/wh7f454c46tw1917467835_-2108786972/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8?icpid=88888888&RTS=1713968746&from=4&hms_devid=1145&online=1713968746&vqe=3$订阅源-IPv6-1920x1080-h264
-#EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="📺央视频道",CCTV-13
-http://[2409:8087:1a0a:df::404b]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226011/index.m3u8$订阅源-IPv6-1920x1080-h264
+http://[2409:8087:7008:20::8]/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226233/1.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="📺央视频道",CCTV-13
 http://[2409:8087:1a0a:df::402d]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="📺央视频道",CCTV-13
 http://[2409:8087:1a0a:df::402d]:80/wh7f454c46tw1865416231_2120705273/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8?icpid=88888888&RTS=1713968694&from=4&hms_devid=1103&online=1713968694&vqe=3$订阅源-IPv6-1920x1080-h264
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="📺央视频道",CCTV-13
 http://[2409:8087:1a0a:df::402d]:80/wh7f454c46tw1865416231_2120705273/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8$订阅源-IPv6-1920x1080-h264
+#EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="📺央视频道",CCTV-13
+http://[2409:8087:1a0a:df::4033]:80/wh7f454c46tw1917467835_-2108786972/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226537/index.m3u8?icpid=88888888&RTS=1713968746&from=4&hms_devid=1145&online=1713968746&vqe=3$订阅源-IPv6-1920x1080-h264
